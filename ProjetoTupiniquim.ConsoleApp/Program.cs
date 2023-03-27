@@ -12,34 +12,27 @@
    1 3 N
    5 1 L
  */
+
 namespace ProjetoTupiniquim.ConsoleApp
 {
     internal class Program
     {
-        /**
-        * 1) Precisa ser "static"        
-        * 2) Definir o tipo de retorno "void"
-        * 3) Definir um nome "MoverRobo"
-        * 4) Definir se terá ou não argumentos "(char direcao, int posicaoX, int posicaoY)"
-        * 5) Definir um escopo
-        */
+        //variável é global, pode ser acessada dentro de todas as funções da classe Program
+
+        static string[] comandos = new string[2];
+        static string[] localizacoes = new string[2];
+        static int posicaoRobo = 0; 
 
         static void Main(string[] args)
-        {
-            string[] comandos = new string[2];
-            string[] localizacoes = new string[2];
-
-            int posicaoRobo = 0;
-
+        {            
             ConfigurarArea();
 
-            ConfigurarLocalizacaoEhComando(ref posicaoRobo, ref comandos, ref localizacoes);
+            ConfigurarLocalizacaoEhComando();
 
-            ConfigurarLocalizacaoEhComando(ref posicaoRobo, ref comandos, ref localizacoes);           
+            ConfigurarLocalizacaoEhComando();
 
             for (int j = 0; j < comandos.Length; j++)
             {
-                //conversão dos dados, tratamento dos dados
                 string[] inputRobo = localizacoes[j].Split(" ");
 
                 int posicaoX = Convert.ToInt32(inputRobo[0]);
@@ -57,15 +50,23 @@ namespace ProjetoTupiniquim.ConsoleApp
             Console.ReadLine();
         }
 
-        private static void ConfigurarLocalizacaoEhComando(ref int posicao, ref string[] comandos, ref string[] localizacoes)
+        /**
+        * 1) Precisa ser "static"        
+        * 2) Definir o tipo de retorno "void"
+        * 3) Definir um nome "MoverRobo"
+        * 4) Definir se terá ou não argumentos "(char direcao, int posicaoX, int posicaoY)"
+        * 5) Definir um escopo
+        */
+
+        static void ConfigurarLocalizacaoEhComando()
         {
-            Console.Write($"Informe a localição do robô {posicao + 1}: ");
-            localizacoes[posicao] = Console.ReadLine(); //1 2 N
+            Console.Write($"Informe a localição do robô {posicaoRobo + 1}: ");
+            localizacoes[posicaoRobo] = Console.ReadLine(); //1 2 N
 
-            Console.Write($"Informe o comando do robô {posicao + 1}: ");
-            comandos[posicao] = Console.ReadLine();
+            Console.Write($"Informe o comando do robô {posicaoRobo + 1}: ");
+            comandos[posicaoRobo] = Console.ReadLine();
 
-            posicao++;
+            posicaoRobo++;
         }
 
         static void ConfigurarArea()
