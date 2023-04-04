@@ -32,23 +32,11 @@ namespace ProjetoTupiniquim.ConsoleApp
 
             //ConfigurarLocalizacaoEhComando();
 
-            Robo[] tropaRobos = new Robo[2];
-            int i = 0;
-
             for (int j = 0; j < comandos.Length; j++)
             {
-
-                Robo robocop = new Robo(); //instância
-                robocop.Localizacao = localizacoes[j]; //1 2 N                
-                                
-                string comando = comandos[j];
-
-                robocop.ExplorarArea(comando);
-
-                tropaRobos[i++] = robocop;
-
-                string localizacaoTeste = robocop.Localizacao;
-
+                Robo robocop = new Robo(); 
+                robocop.Localizacao = localizacoes[j];                                 
+                robocop.ExplorarArea(comandos[j]);
                 Console.WriteLine(robocop.Localizacao);
             }
 

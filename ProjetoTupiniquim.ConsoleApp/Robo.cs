@@ -1,11 +1,4 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace ProjetoTupiniquim.ConsoleApp
+﻿namespace ProjetoTupiniquim.ConsoleApp
 {
     public class Robo //projeto, receita, design, molde
     {
@@ -63,7 +56,6 @@ namespace ProjetoTupiniquim.ConsoleApp
             }
         }
 
-
         //métodos privados
         private void MoverRobo()
         {
@@ -108,7 +100,6 @@ namespace ProjetoTupiniquim.ConsoleApp
                     break;
             }
         }
-
         
     }
 }

@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33424.131
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjetoTupiniquim.ConsoleApp", "ProjetoTupiniquim.ConsoleApp\ProjetoTupiniquim.ConsoleApp.csproj", "{72EEBD09-34E8-4FD0-B68D-2ECEE84FDA4B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProjetoTupiniquim.ConsoleApp", "ProjetoTupiniquim.ConsoleApp\ProjetoTupiniquim.ConsoleApp.csproj", "{72EEBD09-34E8-4FD0-B68D-2ECEE84FDA4B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjetoTupiniquim.WinApp", "ProjetoTupiniquim.WinApp\ProjetoTupiniquim.WinApp.csproj", "{023D0D58-EB72-4B5D-B97A-E08FD3C363CE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{72EEBD09-34E8-4FD0-B68D-2ECEE84FDA4B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{72EEBD09-34E8-4FD0-B68D-2ECEE84FDA4B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{72EEBD09-34E8-4FD0-B68D-2ECEE84FDA4B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{023D0D58-EB72-4B5D-B97A-E08FD3C363CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{023D0D58-EB72-4B5D-B97A-E08FD3C363CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{023D0D58-EB72-4B5D-B97A-E08FD3C363CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{023D0D58-EB72-4B5D-B97A-E08FD3C363CE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
