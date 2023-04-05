@@ -2,6 +2,8 @@
 {
     public class Robo //projeto, receita, design, molde
     {
+        public string cor;
+
         //atributos
         private int posicaoX;
         private int posicaoY;
